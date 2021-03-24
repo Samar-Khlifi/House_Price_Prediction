@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Housing</title>
+<link rel="stylesheet" href="static/main.css">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family:'Times New Roman', Times, serif, sans-serif}
+</style>
+<body>
+<header >
+  <div  style="padding:150px" >
+    <h1 style="color:black"  class="text-center"  ><strong>House price prediction</strong> </h1><br>
+    <h2 style="color: black;" class="text-center">Modeling house prediction using Regression  analysis developed by SAMAR KHLIFI  </h2>
+  
+    <fieldset>
+        <form method="POST" action="{{url_for('home')}}" >
+        
+        <input type="text" class="form-control"  id="longitude" name="longitude" placeholder="longitude" ><p></p>
+       
+        <input type="text" class="form-control" id="latitude" name="latitude" placeholder=" latitude" /><p></p>
+        
+        <input type="text" class="form-control" id="housing_median_age" name="housing_median_age" placeholder=" housing_median_age"/><p></p>
+        
+        <input type="text" class="form-control" id="total_rooms" name="total_rooms"  placeholder="total_rooms"/><p></p>
+        
+        <input type="text" class="form-control" id="total_bedrooms" name="total_bedrooms" placeholder="total_bedrooms" /><p></p>
+       
+        <input type="text" class="form-control" id="population" name="population"   placeholder="population"/><p></p>
+      
+        <input type="text"  class="form-control" id="households" name="households" placeholder="households"/><p></p>
+        
+        <input type="text" class="form-control" id="median_income" name="median_income"  placeholder="median_income"/><p></p>
+        
+        <div class="page-container1">
+        <p>
+            <label style="color: lightcyan;"><strong>Ocean_proximity: </strong> :</label>
+            <p></p><input type="radio" id="NEAR BAY"  name="souhait" value="NEAR BAY" /> <label style="color: lightcyan;">NEAR BAY</label>
+            <p></p><input type="radio" id="ISLAND" name="souhait" value="ISLAND"/> <label style="color: lightcyan;">ISLAND</label>
+            <p></p><input type="radio" id="NEAR OCEAN" name="souhait" value="NEAR OCEAN" /> <label style="color: lightcyan;">NEAR OCEAN</label>
+            <p></p><input type="radio" id="INLAND" name="souhait" value="INLAND" /> <label style="color: lightcyan;">INLAND</label>
+            <p></p><input type="radio" id="1H OCEAN" name="souhait" value="1H OCEAN" /> <label style="color: lightcyan;">1H OCEAN</label>
+        </p>
+        <button type="submit" class="btn btn-secondary">Predict your house price</button>
+        </div>
+      </form>
+  </div>  
+</header>   
+  </div>
+</div>
+</script>
+</body>
+</html>
